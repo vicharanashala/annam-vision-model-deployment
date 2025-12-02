@@ -1,0 +1,20 @@
+# Python cache files
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+.env.example
+
+# Secrets
+client_secret.json
+client_secret_local.json
+
+# Logs
+*.log
+
+# Streamlit specific
+.streamlit/
+
+# Node modules (if any in frontend)
+frontend/node_modules/
