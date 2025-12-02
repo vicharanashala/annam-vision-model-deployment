@@ -7,14 +7,21 @@ __pycache__/
 .env.example
 
 # Secrets
+frontend/client_secret.json
+frontend/client_secret_local.json
 client_secret.json
 client_secret_local.json
 
 # Logs
 *.log
 
-# Streamlit specific
+# Model weights
+model_weights/*.pt
+
+# Streamlit config
 .streamlit/
 
-# Node modules (if any in frontend)
-frontend/node_modules/
+# ngrok binaries
+ngrok3/ngrok
+ngrok3/*.tgz
+
