@@ -1,6 +1,9 @@
-# Python cache files
+# ------------------------------
+# Python cache
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
 # Environment files
 .env
@@ -11,12 +14,15 @@ frontend/client_secret.json
 frontend/client_secret_local.json
 client_secret.json
 client_secret_local.json
+api/knowledge_graph.json  # if you want to keep this private
 
 # Logs
 *.log
 
-# Model weights
+# Model weights (all large model files)
 model_weights/*.pt
+model_weights/*.h5
+model_weights/*.ckpt
 
 # Streamlit config
 .streamlit/
@@ -25,3 +31,13 @@ model_weights/*.pt
 ngrok3/ngrok
 ngrok3/*.tgz
 
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Other unwanted files
+*.zip
+*.tar.gz
+*.egg-info/
