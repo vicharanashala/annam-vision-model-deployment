@@ -39,3 +39,5 @@ ngrok3/*.tgz
 *.zip
 *.tar.gz
 *.egg-info/
+
+mcp_leaf_disease_detector/
