@@ -1,5 +1,6 @@
-# server.py — MCP wrapper for your FastAPI leaf disease backend
 
+# server.py — MCP wrapper for your FastAPI leaf disease backend
+# import necessary libraries
 from mcp.server.fastmcp import FastMCP
 import httpx
 import base64
