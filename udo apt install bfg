@@ -1,0 +1,47 @@
+[33mcommit dc620d64a4c276cb322d01a8d1b88db7ae0ba4c4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Deepthi <deepthiajith14@gmail.com>
+Date:   Tue Dec 2 12:12:55 2025 +0000
+
+    Remove large files to fix push issues
+
+ .gitignore                            |  20 [32m++++++++++++++++++[m[31m--[m
+ model_weights/best_Potato_Tomato_L.pt | Bin [31m1212729130[m -> [32m0[m bytes
+ ngrok3/ngrok                          | Bin [31m30310584[m -> [32m0[m bytes
+ 3 files changed, 18 insertions(+), 2 deletions(-)
+
+[33mcommit 995d70df9ecda9c0b59302bebaacbf1e2cbe9569[m
+Author: Deepthi <deepthiajith14@gmail.com>
+Date:   Tue Dec 2 11:52:38 2025 +0000
+
+    Update .gitignore to ignore secrets and binaries
+
+ .gitignore                             |  13 [32m++++++[m[31m--[m
+ frontend/app_disabledlogin.py          | 131 [31m----------------------------------------------------------------------------[m
+ model_weights/best_Potato_Tomato_L1.pt | Bin [31m1212729194[m -> [32m0[m bytes
+ ngrok3/ngrok-v3-stable-linux-amd64.tgz | Bin [31m10980950[m -> [32m0[m bytes
+ 4 files changed, 10 insertions(+), 134 deletions(-)
+
+[33mcommit 654e311f6dd5c7fc89f53f339a6580631d0a7ae2[m
+Author: Deepthi <deepthiajith14@gmail.com>
+Date:   Tue Dec 2 10:44:54 2025 +0000
+
+    Initial commit
+
+ .gitignore                                 |  20 [32m+++++++[m
+ README.md                                  |  17 [32m++++++[m
+ api/knowledge_graph.json                   |  81 [32m++++++++++++++++++++++++++++[m
+ api/main.py                                |  94 [32m+++++++++++++++++++++++++++++++++[m
+ api/model_loader.py                        |  86 [32m++++++++++++++++++++++++++++++[m
+ api/oauth_utils.py                         |  15 [32m++++++[m
+ api/requirements.txt                       |   7 [32m+++[m
+ frontend/app.py                            | 208 [32m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ frontend/app_disabledlogin.py              | 131 [32m+++++++++++++++++++++++++++++++++++++++++++++[m
+ frontend/requirements.txt                  |   5 [32m++[m
+ mcp_leaf_disease_detector/requirements.txt |   2 [32m+[m
+ mcp_leaf_disease_detector/server.py        |  38 [32m+++++++++++++[m
+ model_weights/best_Potato_Tomato_L.pt      | Bin [31m0[m -> [32m1212729130[m bytes
+ model_weights/best_Potato_Tomato_L1.pt     | Bin [31m0[m -> [32m1212729194[m bytes
+ nginx/nginx.conf                           |  55 [32m+++++++++++++++++++[m
+ ngrok3/ngrok                               | Bin [31m0[m -> [32m30310584[m bytes
+ ngrok3/ngrok-v3-stable-linux-amd64.tgz     | Bin [31m0[m -> [32m10980950[m bytes
+ 17 files changed, 759 insertions(+)
