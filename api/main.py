@@ -56,7 +56,7 @@ async def predict(file: UploadFile = File(...)):
         raise HTTPException(status_code=400, detail=f"Invalid image file: {e}")
 
     x = preprocess_pil_image(pil_img)
-    THRESHOLD = 0.7
+    THRESHOLD = 0.2
 
     with torch.no_grad():
         logits = model(x)
